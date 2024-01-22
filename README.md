@@ -35,3 +35,17 @@ To run this project locally, follow these steps:
 
    ```bash
    git clone https://github.com/your-username/simple-calculator.git
+2. Navigate to the project directory:
+   ```bash
+   cd simple-calculator
+3. Install dependencies:
+     ```bash
+     npm install
+4. Start the development server:
+      ```bash
+      npm start
+
+The app will be accessible at http://localhost:3000/ in your web browser.
+
+## Contributing
+If you find any issues or have suggestions for improvements, feel free to open an issue or submit a pull request.
