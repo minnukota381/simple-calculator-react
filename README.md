@@ -1,15 +1,18 @@
-# Simple Calculator Web App
+#!/bin/bash
 
-This web application is a simple calculator built using React. It allows users to perform basic arithmetic operations such as addition, subtraction, multiplication, and division.
+cat <<EOF > README.md
+# Simple Calculator
 
-## Demo
+A basic calculator web application built using React.
 
-Check out the live demo: [Simple Calculator](https://simple-calculator-cutm.onrender.com/)
+## Live Demo
+
+Check out the live demo [here](https://simple-calculator-cutm.onrender.com/).
 
 ## Features
 
+- Perform basic arithmetic operations: addition, subtraction, multiplication, and division.
 - Responsive design for various screen sizes.
-- Basic arithmetic operations: addition, subtraction, multiplication, and division.
 - Clear button to reset the input.
 - Backspace button to delete the last digit.
 
@@ -33,5 +36,37 @@ To run this project locally, follow these steps:
 
 1. Clone the repository:
 
-   ```bash
+   \`\`\`bash
    git clone https://github.com/your-username/simple-calculator.git
+   \`\`\`
+
+2. Navigate to the project directory:
+
+   \`\`\`bash
+   cd simple-calculator
+   \`\`\`
+
+3. Install dependencies:
+
+   \`\`\`bash
+   npm install
+   \`\`\`
+
+4. Start the development server:
+
+   \`\`\`bash
+   npm start
+   \`\`\`
+
+   The app will be accessible at \`http://localhost:3000/\` in your web browser.
+
+## Contributing
+
+If you find any issues or have suggestions for improvements, feel free to open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+EOF
+
+echo "README.md created successfully!"
