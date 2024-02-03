@@ -1,6 +1,6 @@
 # Simple Calculator
 
-A basic calculator web application built using React.
+A Simple Calculator web application built using React.
 
 ## Live Demo
 
