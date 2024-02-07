@@ -20,7 +20,8 @@ body {
 }
 
 .calculator {
-  width: 400px;
+  width: 90%; 
+  max-width: 400px;
   margin: 20px auto;
   padding: 20px;
   background: rgba(255, 255, 255, 0.8); 
@@ -28,18 +29,6 @@ body {
   overflow: hidden;
 }
 
-
-@keyframes gradientAnimation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
 .display {
   text-align: right;
   background-color: #1C1A1C;
@@ -76,7 +65,7 @@ input:focus {
 
 .buttons {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); 
   gap: 10px;
 }
 
@@ -106,12 +95,13 @@ button {
   background: linear-gradient(0deg, #dd00ff, #02f7ff);
   color: white;
 }
-.dot,.percentage {
+
+.dot, .percentage {
   background: linear-gradient(0deg, #ff0202, #ff02fb);
   color: white;
 }
-.clear,
-.backspace {
+
+.clear, .backspace {
   background: linear-gradient(0deg, #0aafbe, #5d00ff);
   color: white;
 }
