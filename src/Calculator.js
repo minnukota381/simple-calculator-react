@@ -1,15 +1,12 @@
-// Calculator.js
-
 import React, { useState } from 'react';
 import './Calculator.css';
 
 const Calculator = () => {
   const [input, setInput] = useState('');
   const [result, setResult] = useState('');
+  const [memory, setMemory] = useState(null);
 
   const handleClick = (value) => {
-    console.log('Button clicked with value:', value);
-
     if (value === '=') {
       try {
         setResult(eval(input).toString());
@@ -27,9 +24,21 @@ const Calculator = () => {
       } catch (error) {
         setResult('Error');
       }
-    } else if (value === 'M') {
-    
-      setResult('Developed by Minnu');
+    } else if (value === 'MS') {
+      setMemory(input);
+      setResult('Memory stored');
+    } else if (value === 'MR') {
+      setInput(memory);
+    } else if (value === 'MC') {
+      setMemory(null);
+    } else if (value === 'M+') {
+      try {
+        const newValue = memory ? eval(memory + '+' + input) : eval(input);
+        setMemory(newValue.toString());
+        setResult('Memory updated');
+      } catch (error) {
+        setResult('Error');
+      }
     } else {
       setInput((prevInput) => prevInput + value);
     }
@@ -64,11 +73,15 @@ const Calculator = () => {
         <button onClick={() => handleClick('3')}>3</button>
         <button className="operator" onClick={() => handleClick('-')}>-</button>
 
-        
         <button className="dot" onClick={() => handleClick('.')}>.</button>
         <button onClick={() => handleClick('0')}>0</button>
         <button className="percentage" onClick={() => handleClick('%')}>%</button>
-        <button onClick={() => handleClick('M')}>M</button>
+        <button onClick={() => handleClick('Developed by Minnu')}>M</button>
+
+        <button onClick={() => handleClick('MS')}>MS</button>
+        <button onClick={() => handleClick('MR')}>MR</button>
+        <button onClick={() => handleClick('MC')}>MC</button>
+        <button onClick={() => handleClick('M+')}>M+</button>
       </div>
     </div>
   );
