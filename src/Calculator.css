@@ -20,11 +20,11 @@ body {
 }
 
 .calculator {
-  width: 90%; 
-  max-width: 400px;
+  width: 80%;
+  max-width: 350px;
   margin: 20px auto;
-  padding: 20px;
-  background: rgba(255, 255, 255, 0.8); 
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.8);
   border-radius: 8px;
   overflow: hidden;
 }
@@ -42,7 +42,7 @@ body {
 }
 
 input {
-  width: calc(100% - 20px);
+  width: calc(100% - 15px);
   padding: 10px;
   border: none;
   border-radius: 4px;
@@ -58,32 +58,32 @@ input:focus {
 }
 
 .result {
-  font-size: larger;
+  font-size: medium;
   margin-top: 10px;
   color: white;
 }
 
 .buttons {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); 
-  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(50px, auto);
+  gap: 6px;
 }
 
 button {
   border: none;
-  width: 100%;
-  height: 5em;
+  height: 3.5em;
   border-radius: 3em;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 12px;
+  gap: 8px;
   background: #1C1A1C;
   cursor: pointer;
   transition: all 450ms ease-in-out;
   color: #AAAAAA;
-  font-size: medium;
-  margin: 5px;
+  font-size: small;
+  margin: 3px;
 }
 
 .operator {
@@ -106,13 +106,18 @@ button {
   color: white;
 }
 
+.memory {
+  background: linear-gradient(0deg, #ff8800, #ff00ff);
+  color: white;
+}
+
 button:hover {
   background: linear-gradient(0deg, #fa7f0c, #ffb700);
   box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
     inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2),
     0px 0px 0px 4px rgba(255, 255, 255, 0.2),
     0px 0px 180px 0px #ff1778;
-  transform: translateY(-2px);
+  transform: translateY(-1.5px);
 }
 
 button:hover .text {
@@ -121,5 +126,5 @@ button:hover .text {
 
 button:hover .sparkle {
   fill: white;
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
