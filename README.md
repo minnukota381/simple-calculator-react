@@ -37,7 +37,7 @@ To run this project locally, follow these steps:
    git clone https://github.com/minnukota381/Simple-Calculator-CUTM.git
 2. Navigate to the project directory:
    ```bash
-   cd simple-calculator
+   cd Simple-Calculator-CUTM
 3. Install dependencies:
      ```bash
      npm install
