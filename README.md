@@ -34,10 +34,10 @@ To run this project locally, follow these steps:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/minnukota381/Simple-Calculator-CUTM.git
+   git clone https://github.com/minnukota381/Simple-Calculator-React.git
 2. Navigate to the project directory:
    ```bash
-   cd Simple-Calculator-CUTM
+   cd Simple-Calculator-React
 3. Install dependencies:
      ```bash
      npm install
