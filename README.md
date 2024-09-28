@@ -58,9 +58,3 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
  - The React community for providing such a powerful library.
  - Render for hosting the live demo of the application.
  - The open-source community for various libraries and tools used in this project.
-
-## Author
-
-- **Minnu**
-  - GitHub: [minnukota381](https://github.com/minnukota381)
-
